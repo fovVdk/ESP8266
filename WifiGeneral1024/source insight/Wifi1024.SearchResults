@@ -1,0 +1,5 @@
+---- smartconfig_done Æ¥Åä (4 ÔÚ 2 ÎÄ¼ş ) ----
+smartconfig_done(sc_status status, void *pdata)
+                smartconfig_start(smartconfig_done);    
+smartconfig_done(sc_status status, void *pdata)
+    smartconfig_start(smartconfig_done);

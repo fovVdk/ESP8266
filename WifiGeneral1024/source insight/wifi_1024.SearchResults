@@ -1,0 +1,5 @@
+---- uv Matches (4 in 3 files) ----
+Base64.c (e:\dj\esp8266\cygwin\workspace\wifigeneral1024\app\user):static const char basis64[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+Wifi.c (e:\dj\esp8266\cygwin\workspace\wifigeneral1024\app\user):    js_send = make_json_to_send("\",\"uv\":\"");
+Wifi.c (e:\dj\esp8266\cygwin\workspace\wifigeneral1024\app\user):    js_send = make_json_to_send(LOGIN_UV);
+Wifi.h (e:\dj\esp8266\cygwin\workspace\wifigeneral1024\app\user):#define LOGIN_UV  "1"

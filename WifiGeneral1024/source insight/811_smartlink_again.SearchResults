@@ -1,0 +1,3 @@
+---- user_tcp_discon_cb 匹配 (2 在 1 文件 ) ----
+Zyt_tcpip.c (e:\esp8266\cygwin\workspace\811_link_status\app\user):user_tcp_discon_cb(void *arg) //断开与服务器的连接
+Zyt_tcpip.c (e:\esp8266\cygwin\workspace\811_link_status\app\user):	espconn_regist_disconcb(pespconn, user_tcp_discon_cb);  //断开连接的回调函数,tcp主动断开时调用
