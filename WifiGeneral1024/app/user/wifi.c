@@ -486,7 +486,7 @@ mqtt_tcpclient_recv(void *arg, char *pdata, unsigned short len)
                     js_send = make_json_to_send(",\"cmd\":\"download\",\"ret\":200}");
                     SendDataToServer(js_send);//和上报时间太短，导致数据丢失
                     make_json_to_send(NULL);
-                    if (base64Flag)
+                    if (base64Flag)                 //解base64，向下抛数据
                     {
                         char val[1024] = {0};
                         if (get_json_value(myjson, "\"data\"", 0, val) > 0)
@@ -494,7 +494,7 @@ mqtt_tcpclient_recv(void *arg, char *pdata, unsigned short len)
                             if (val[0] == '"')
                             {
                                     val[os_strlen(val) - 1] = '\0';
-                                    pl_len = decode_base64_to_plain(payload, val + 1);
+                                    pl_len = decode_base64_to_plain(payload, val + 1);//解析到内存
                             }
                             else
                             {
