@@ -8,9 +8,9 @@ Zyt_json.c json数据包处理
 lp_uart.c uart串口机制
 base64.c base64加密
 update.c 固件升级
-fifo.c
-sprintf.c
-utils.c
+fifo.c fifo存储器调度算法
+sprintf.c 字符串格式化
+utils.c 字符校验工具
 include目录--
 应用程序相关头文件
 driver目录--
