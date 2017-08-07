@@ -15,5 +15,11 @@ include目录--
 应用程序相关头文件
 driver目录--
 外围驱动支持I2C,SPI,外部按键，PWM，双UART
-
-
+结构介绍：
+1.主入口
+user_rf_cal_sector_set（flash初始化）---调用头文件c_types.h(数据类型）user_interface.h(接口函数)
+wifi联网检测模块
+网路灯初始化
+参数初始化
+初始化运行动作
+入口程序
