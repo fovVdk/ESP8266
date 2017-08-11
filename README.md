@@ -19,7 +19,8 @@ driver目录--
 1.主入口
 user_rf_cal_sector_set（flash初始化）---调用头文件c_types.h(数据类型）user_interface.h(接口函数)
 wifi联网检测模块
-网路灯初始化
+LED初始化
 参数初始化
 初始化运行动作
 入口程序
+2.创建tcp服务及tcp传输的机制
